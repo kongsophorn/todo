@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input{
+    background-color: white !important;
+    border-color: rgb(68, 71, 71) !important;
+    color: black !important;
+}
+
+.header-add-edit{
+  
+}
+.table-body{
+    color: rgb(94, 92, 92) !important;
+    
+}
+
+.add-new {
+    color: rgb(94, 92, 92) !important;
+}
+.back-g {
+    
+    border-radius: 10px;
+    
+   
+}
