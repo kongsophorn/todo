@@ -75,11 +75,11 @@ const Task: React.FC<TaskProps> = ({task} ) =>{
     return (
 
         <tr key ={task.id}>
-        <th>{task.isCompleted ? <FaRegCircleCheck /> : <ImRadioUnchecked /> } </th>
-        <th style={{ textDecoration: task.isCompleted ? 'line-through' : 'none' }}>{task.todo }</th>
-        <th >{task.createdAt ? new Date(task.createdAt).toLocaleDateString() : "N/A"}</th>
+             <th>{task.isCompleted ? <FaRegCircleCheck /> : <ImRadioUnchecked /> } </th>
+             <th style={{ textDecoration: task.isCompleted ? 'line-through' : 'none' }}>{task.todo }</th>
+             <th >{task.createdAt ? new Date(task.createdAt).toLocaleDateString() : "N/A"}</th>
 
-        <th className="flex gap-5"> <BiEdit onClick={()=>setOpenModalEdit(true)} cursor="pointer"  size={18} color="blue" />
+             <th className="flex gap-5"> <BiEdit onClick={()=>setOpenModalEdit(true)} cursor="pointer"  size={18} color="blue" />
             <Modal modalOpen ={openModalEdit} setModelOpen={setOpenModalEdit}>
                 <form onSubmit={(handleSubmitEditTodo)}>
                     <h3 className="ffont-bold text-lg"> Edit Task</h3>
@@ -117,7 +117,7 @@ const Task: React.FC<TaskProps> = ({task} ) =>{
                     <button  className=" btn btn-outline btn-success"onClick={() => handleSubmitDeleteTodo(task.id)}>Yes</button>
                 </div>
             </Modal>
-        </th>
+             </th>
         </tr>
     )
 }

@@ -20,7 +20,11 @@ const AddTask = ()=>{
     const handleSubmitNewTodo:FormEventHandler<HTMLFormElement> = async (e)=>{
         e.preventDefault();
 
-      
+        if (createdAt.trim() === "" || todo === "" || isCompleted === undefined) {
+            alert("Please input data ");
+            return;
+          }
+          
         await addTodo({
             id:uuidString,
             todo:todo,
@@ -29,10 +33,7 @@ const AddTask = ()=>{
 
         });
 
-        if (createdAt.trim() === "" || todo === "" || isCompleted === undefined) {
-          alert("Please input data ");
-          return;
-        }
+      
 
         setNewTasktodo("");  
         setNewTaskisCompleted(false);  
