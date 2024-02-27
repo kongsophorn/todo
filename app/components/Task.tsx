@@ -55,8 +55,8 @@ const Task: React.FC<TaskProps> = ({task} ) =>{
       setTaskisCompleted(isCompleted)
 
      console.log('isCompleted', isCompleted);
-    setOpenModalEdit(false);
-   };
+     setOpenModalEdit(false);
+    };
 
  
 
