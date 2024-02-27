@@ -87,7 +87,7 @@ const Task: React.FC<TaskProps> = ({task} ) =>{
                     <div className="grid grid-cols-2 gap-4 pb-4">
                         
                         <input value={todo} onChange={e=> setTasktodo(e.target.value)} type="text" placeholder="to do" className="input input-borderd w-full  "/>                   
-                        <input value={createdAt} onChange={e=> setTaskToEdit4(e.target.value)} type="text" placeholder=" created at" className="input input-borderd w-full  "/>                   
+                        <input value={createdAt} onChange={e=> setTaskToEdit4(e.target.value)} type="text" readOnly placeholder=" created at" className="input input-borderd w-full  "/>                   
 
                     </div>
 
