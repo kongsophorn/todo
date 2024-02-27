@@ -37,20 +37,17 @@ const Task: React.FC<TaskProps> = ({task} ) =>{
     const handleSubmitEditTodo:FormEventHandler<HTMLFormElement> = async (e)=>{
         e.preventDefault();
 
- 
+    if (createdAt.trim() === "" || todo ==="" || isCompleted === undefined) {
+        alert("Please input data ");
+        return;
+    }
+    
     await editTodo({
         id:id,
         todo:todo,
         isCompleted: isCompleted,
         createdAt: createdAt,
     });
-
-    if (createdAt.trim() === "" || todo ==="" || isCompleted === undefined) {
-        alert("Please input data ");
-        return;
-    }
-
-  
 
       setTaskisCompleted(isCompleted)
 
