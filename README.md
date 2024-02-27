@@ -1,3 +1,10 @@
-# how to run application 
 
-## step 1: open terminal then type "npm run dev"
+## Getting Started
+
+First, the development server will automatically run :
+
+
+step1: npm run dev
+
+
+step2: Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
