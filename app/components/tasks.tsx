@@ -48,7 +48,7 @@ const Task: React.FC<TaskProps> = ({task} ) =>{
     if (createdAt.trim() === "" || todo ==="" || isCompleted === undefined) {
         alert("Please input data ");
         return;
-      }
+    }
 
   
 
