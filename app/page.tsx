@@ -1,7 +1,7 @@
 
 import Image from "next/image";
-import AddTask from "./components/addTask";
-import TodoList from "./components/todoList";
+import AddTask from "./components/add-task";
+import TodoList from "./components/todo-list";
 import { getAllTodos } from "@/api";
 
 export default async function Home() {
