@@ -1,6 +1,6 @@
 "use client"
 
-import Task from "./Task";
+import Task from "./task";
 import { useState } from "react";
 import { todo } from "node:test";
 import { ITask } from "@/type/task";

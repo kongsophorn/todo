@@ -8,9 +8,6 @@ input{
     color: black !important;
 }
 
-.header-add-edit{
-  
-}
 .table-body{
     color: rgb(94, 92, 92) !important;
     
@@ -21,7 +18,6 @@ input{
 }
 .back-g {
     
-    border-radius: 10px;
-    
+    border-radius: 10px; 
    
 }
