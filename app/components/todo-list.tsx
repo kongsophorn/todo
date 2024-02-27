@@ -18,7 +18,7 @@ const TodoList: React.FC<TodoListProps> =({tasks})=>{
     return (
       
         <div className="overflow-x-auto border-x-4 p-4 bg-slate-100 grid justify-items-stretch back-g ">
-            <input type="text" placeholder="Search by todo ..." value={searchTerm} onChange={(e) => setsearchTerm(e.target.value)} 
+            <input type="text" placeholder="filter by todo ..." value={searchTerm} onChange={(e) => setsearchTerm(e.target.value)} 
                 className="input input-bordered w-full max-w-xs justify-self-end mb-2" />
    
             <table className="table">
